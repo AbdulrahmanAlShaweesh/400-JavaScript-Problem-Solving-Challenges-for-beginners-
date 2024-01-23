@@ -1,0 +1,18 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+div {
+    height: 300px;
+    width: 400px;
+    background-color: antiquewhite;
+    border-radius: 20px;
+    margin: auto auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
+}
