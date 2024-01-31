@@ -6,3 +6,4 @@ function getOpisiteNumber(number) {
 }
 
 console.log(getOpisiteNumber(10));
+console.log(getOpisiteNumber(-10));
