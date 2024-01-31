@@ -13,3 +13,17 @@ function reverseArrayDigits(n) {
 }
 
 console.log(reverseArrayDigits(123456789));
+
+// other way using for loop.
+function reverseDigits(n) {
+  const number = [];
+
+  for (i in n) {
+    number.push(parseInt(n[i]));
+  }
+
+  number.reverse();
+  console.log(number);
+}
+
+reverseDigits("1234");
