@@ -1,15 +1,22 @@
+
+// create function 
+// create an empty arry to store the positive numbers
+// create a varable to store the negative numbers. 
+// loop through the array. 
+// check if the number is positive add it to the array
+// if the number if negative add the negative value to the negative variable
+// return a list contain the number of poistive in the array and the total negative numbers.
 function countPositive(array) {
-  let counter = 0;
-  negative_value = 0;
-  var result = [];
+  let negative_numbers = 0;
+  let positive_numbers = [];
 
   for (var element in array) {
-    array[element] < 0 ? negative_value += array[element] : counter += 1;
+    array[element] > 0
+      ? positive_numbers.push(array[element])
+      : (negative_numbers += array[element]);
   }
-  result.push(counter);
-  result.push(negative_value);
 
-  return result;
+  return [positive_numbers.length, negative_numbers];
 }
 
 console.log(
