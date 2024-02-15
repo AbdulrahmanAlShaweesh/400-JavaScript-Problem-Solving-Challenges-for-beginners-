@@ -1,0 +1,3 @@
+function countPositive(array) {
+    
+}
