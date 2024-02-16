@@ -20,3 +20,15 @@ function reset() {
   var user_input = document.getElementById("input");
   user_input.value = null;
 }
+
+// other way to do the task with build in functions
+function doubleCounts() {
+  let user_input = document.getElementById("input").value;
+  let text = user_input
+    .split("")
+    .map((letter) => letter.repeat(2))
+    .join("");
+  document.getElementById("result").innerHTML = text;
+}
+
+// 2 months : shaban, ramadan [html, CSS, javascript, boostrap, talwind, Sase, React Js]
