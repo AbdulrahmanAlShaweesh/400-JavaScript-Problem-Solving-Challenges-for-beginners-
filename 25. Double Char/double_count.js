@@ -14,3 +14,9 @@ function doubleCount() {
   document.getElementById("result").innerHTML = test;
   console.log(test);
 }
+
+// remove the test from the field.
+function reset() {
+  var user_input = document.getElementById("input");
+  user_input.value = null;
+}

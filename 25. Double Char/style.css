@@ -43,6 +43,8 @@ body {
   background-color: var(--btn-bc);
   opacity: 0.6;
   transition: opacity 1s ease;
+  color: var(--fnt-color);
+  font-size: 18px;
 }
 
 .cntiiner .btn:hover {
