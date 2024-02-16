@@ -1,0 +1,57 @@
+/* General Root */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-bc: antiquewhite;
+  --btn-bc: red;
+  --fnt-color: #fff;
+}
+
+body {
+  background-color: var(--main-bc);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cntiiner {
+  width: 30%;
+  background-color: rgb(99, 92, 92);
+  padding: 30px 85px;
+  border: 1px solid grey;
+}
+
+.cntiiner .input {
+  width: 100%;
+  border: 1px solid grey;
+  height: 35px;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+.cntiiner .btn {
+  width: 100%;
+  height: 35px;
+  margin-top: 20px;
+  border-radius: 5px;
+  border: 0;
+  background-color: var(--btn-bc);
+  opacity: 0.6;
+  transition: opacity 1s ease;
+}
+
+.cntiiner .btn:hover {
+  opacity: 1;
+}
+
+.cntiiner .rsult {
+  color: var(--fnt-color);
+  margin-top: 10px;
+  font-size: 18px;
+  text-transform: capitalize;
+}
