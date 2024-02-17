@@ -36,3 +36,20 @@ function mathOperations() {
       "Please enter a valid operator e.g : '+, -, *, /'";
   }
 }
+
+function reset() {
+  let number1 = document.getElementById("number1");
+  let number2 = document.getElementById("number2");
+  let operation = document.getElementById("operator");
+
+  number1.value = null;
+  number2.value = null;
+  operation.value = null;
+}
+
+// other way of solving the problem.
+function cal(op, num1, num2) {
+  return eval(num1 + op + num2);
+}
+
+console.log(cal("+", 12, 33));
