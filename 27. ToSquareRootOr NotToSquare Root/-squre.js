@@ -6,7 +6,7 @@
 function squreRootOrNot() {
   let numbers = document.getElementById("numbers").value;
 
-  document.getElementById('result').innerHTML = numbers
+  document.getElementById("result").innerHTML = numbers
     .split("")
     .map((num) =>
       Number.isInteger(Math.sqrt(parseInt(num)))
