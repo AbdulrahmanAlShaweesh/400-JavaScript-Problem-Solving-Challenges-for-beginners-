@@ -22,3 +22,10 @@ function removeWhiteSpace(str) {
 }
 
 console.log(removeWhiteSpace("Aadadsasd asdasd"));
+
+// some the task using split and join method
+function removeWhiteSpaces(str) {
+  return str.split(" ").join("");
+}
+
+console.log(removeWhiteSpaces("asd as asas"));
