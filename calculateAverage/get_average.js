@@ -11,7 +11,15 @@ function getAverage(numbers) {
   for (let number in numbers) {
     total += numbers[number];
   }
-  return total;
+  return total / numbers.length;
 }
 
 console.log(getAverage([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
+
+// building a function to do the task using map and reduce. 
+function getAverageOfNumbers(numbers) {
+    let total = 0; 
+    return numbers.reduce((x, n) => x + n) / numbers.length;
+}
+
+console.log(getAverageOfNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
