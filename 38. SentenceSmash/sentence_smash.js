@@ -7,4 +7,4 @@ function sentenceSmashed(array) {
 }
 console.log(sentenceSmashed(["Hello", "World", "is", "best", "place", "to", "leave", "in"]))
 
-// other way using
+ 
