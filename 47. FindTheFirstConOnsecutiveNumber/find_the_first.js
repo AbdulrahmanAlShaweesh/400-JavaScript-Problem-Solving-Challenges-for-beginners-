@@ -2,7 +2,6 @@
 // loop through the array
 // chech if the second number - first number !== 0
 // it cononsecond number return the second number
- 
 
 function firstConOnsecutiveNumber(array) {
   let re = "";
