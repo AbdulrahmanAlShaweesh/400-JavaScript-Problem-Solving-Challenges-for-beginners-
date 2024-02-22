@@ -14,3 +14,11 @@ function removingElements(array) {
 console.log(
   removingElements(["keep", "remove", "keep", "remove", "keep", "..."])
 );
+
+// other answer using filtter
+function removingEveryOtherElements(array) {
+
+    return array.filter((x, i) => i % 2 === 0? x : '');
+}
+
+console.log(removingEveryOtherElements(["keep", "remove", "keep", "remove", "keep", "..."]))
