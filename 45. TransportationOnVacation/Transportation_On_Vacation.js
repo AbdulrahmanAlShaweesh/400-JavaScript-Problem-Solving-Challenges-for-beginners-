@@ -8,9 +8,11 @@ function TransportationOnVacation(days) {
   let total = 1;
 
   if (days >= 7) {
-    total = (days * price) - 50;
-  }else if(days >= 3) {
-    total = (days * price) - 20;
+    total = days * price - 50;
+  } else if (days <= 3) {
+    total = days * price - 20;
+  } else {
+    total = days * price;
   }
 
   return `The total is ${total}$`;
