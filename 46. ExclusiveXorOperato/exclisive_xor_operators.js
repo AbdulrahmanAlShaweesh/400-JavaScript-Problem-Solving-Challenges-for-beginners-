@@ -20,3 +20,9 @@ function exclisoveXOrOpearotrs(a, b) {
 }
 
 console.log(exclisoveXOrOpearotrs(true, false));
+
+// other answer using pernery operators 
+function xOr(a, b) {
+    return a === b? false : true;
+}
+console.log(exclisoveXOrOpearotrs(false, false));
