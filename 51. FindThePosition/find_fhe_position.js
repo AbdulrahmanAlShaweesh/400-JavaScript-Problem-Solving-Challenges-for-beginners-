@@ -36,3 +36,12 @@ function getPosition(letter) {
 }
 
 console.log(getPosition("s"));
+// new way to solve the problem using string. 
+function position(letter) {
+    letters  = 'abcdefghigklmnopkrstuvwxyz'; 
+
+    return letters.indexOf(letter) + 1;
+}
+
+
+console.log(position('r'))
