@@ -36,12 +36,25 @@ function getPosition(letter) {
 }
 
 console.log(getPosition("s"));
-// new way to solve the problem using string. 
+// new way to solve the problem using string.
 function position(letter) {
-    letters  = 'abcdefghigklmnopkrstuvwxyz'; 
+  letters = "abcdefghigklmnopkrstuvwxyz";
 
-    return letters.indexOf(letter) + 1;
+  return `Position of alphabet: ${letters.indexOf(letter) + 1}`;
 }
 
+console.log(position("r"));
 
-console.log(position('r'))
+// other way using loop.
+
+function getPoistions(letter) {
+  alphabets = "abcdefghigklmnopkrstuvwxyz";
+
+  for (let lete in alphabets) {
+    if (alphabets[lete] === letter) {
+      return `Position of alphabet: ${lete}`;
+    }
+  }
+}
+
+console.log(getPoistions("a"));
