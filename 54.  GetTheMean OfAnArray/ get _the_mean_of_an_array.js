@@ -21,3 +21,12 @@ function gettingMean(marks) {
 }
 
 console.log(gettingMean([1, 2, 3, 4]))
+
+// way : 3 using map function
+function getStudentsMean(marks) {
+    let total = 0; 
+
+   return marks.map((mark, index) => total += marks[index]).slice(-1) / marks.length;
+}
+
+console.log(getStudentsMean([1, 2, 3, 4]))
