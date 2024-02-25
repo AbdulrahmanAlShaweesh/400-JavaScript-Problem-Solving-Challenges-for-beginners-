@@ -7,7 +7,7 @@
 function ExclamationMarks(string) {
   return string
     .split("")
-    .filter((letter, index) => (letter === "!" ? "" : letter))
+    .filter((letter, index) => (letter !== "!"))
     .join("");
 }
 
