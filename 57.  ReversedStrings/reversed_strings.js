@@ -15,3 +15,10 @@ function reverseString(string) {
 }
 
 console.log(reverseString("world")); // drow
+
+// answear 2: using reverse method
+function reverseWord(string) {
+  return string.split("").reverse().join("");
+}
+
+console.log(reverseWord("world"));
