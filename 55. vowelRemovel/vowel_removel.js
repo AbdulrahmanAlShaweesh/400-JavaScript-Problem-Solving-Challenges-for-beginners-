@@ -5,14 +5,35 @@
 function shorcut(string) {
   let vowels = "aeiou";
 
-  return string.split('').filter(
-    (letter, index) =>
+  return string
+    .split("")
+    .filter(
+      (letter, index) =>
+        letter !== "a" &&
+        letter !== "e" &&
+        letter !== "i" &&
+        letter !== "o" &&
+        letter !== "u"
+    )
+    .join("");
+}
+
+console.log(shorcut("codewars"));
+
+// way 2: using map.
+function shortcuts(string) {
+  return string
+    .split("")
+    .map((letter) =>
       letter !== "a" &&
       letter !== "e" &&
       letter !== "i" &&
       letter !== "o" &&
       letter !== "u"
-  ).join('');
+        ? letter
+        : ""
+    )
+    .join("");
 }
 
-console.log(shorcut("codewars"));  
+console.log(shortcuts("cut"));
