@@ -4,7 +4,7 @@
 // divide the totl with the total of subjects
 // return the mean.
 function getMean(marks) {
-  return marks.reduce((n1, n2, i) => n1 + n2) / marks.length;
+  return Math.floor(marks.reduce((n1, n2, i) => n1 + n2) / marks.length);
 }
 
 console.log(getMean([1, 2, 3, 4]));
@@ -17,16 +17,18 @@ function gettingMean(marks) {
   for (let i in marks) {
     total += marks[i];
   }
-  return total / marks.length; 
+  return Math.floor(total / marks.length);
 }
 
-console.log(gettingMean([1, 2, 3, 4]))
+console.log(gettingMean([1, 2, 3, 4]));
 
 // way : 3 using map function
 function getStudentsMean(marks) {
-    let total = 0; 
+  let total = 0;
 
-   return marks.map((mark, index) => total += marks[index]).slice(-1) / marks.length;
+  return Math.floor(
+    marks.map((mark, index) => (total += marks[index])).slice(-1) / marks.length
+  );
 }
 
-console.log(getStudentsMean([1, 2, 3, 4]))
+console.log(getStudentsMean([1, 2, 3, 4]));
