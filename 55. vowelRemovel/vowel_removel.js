@@ -36,4 +36,4 @@ function shortcuts(string) {
     .join("");
 }
 
-console.log(shortcuts("cut"));
+console.log(shortcuts("book"));
