@@ -14,3 +14,10 @@ function grow(array) {
 }
 
 console.log(grow([1, 2, 3, 4]));
+
+
+// using reduce method. 
+function grows(array) {
+    return array.reduce((x, y) => x * y); 
+}
+console.log(grows([1,2,3,4]))
