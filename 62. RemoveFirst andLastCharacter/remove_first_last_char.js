@@ -7,3 +7,5 @@ function removeFirstLastChar(string) {
 }
 
 console.log(removeFirstLastChar('Abdulrahman'))
+
+// adding other method using
