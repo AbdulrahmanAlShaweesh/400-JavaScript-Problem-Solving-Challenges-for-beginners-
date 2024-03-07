@@ -22,3 +22,10 @@ function isDivisible(n, x, y) {
 }
 
 console.log(isDivisible(12, 7, 5));
+
+// other way using ternery conditions.
+function isDivisibles(n, x, y) {
+  return n % x === 0 && n % y === 0;
+}
+
+console.log(isDivisibles(12, 3, 4));
