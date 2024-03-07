@@ -19,3 +19,11 @@ function fakeBinary(digit) {
 }
 
 console.log(fakeBinary('4567391')) // 0111010
+
+// other way to solve the task using build in functions. 
+function fakeBinarys(digits) {
+
+    return digits.split('').map((dig) => Number(dig) < 5? '0': '1').join('')
+}
+
+console.log(fakeBinarys('4567391'))
