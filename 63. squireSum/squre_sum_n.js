@@ -10,3 +10,15 @@ function squireSum(numbers) {
 }
 
 console.log(squireSum([1, 2, 2]));
+
+// using loop to solve the task.
+function sumOfSquire(numbers) {
+  let counter = 0;
+
+  for (let i in numbers) {
+    counter += numbers[i] ** 2;
+  }
+  return counter;
+}
+
+console.log(sumOfSquire([1, 2, 2]));
