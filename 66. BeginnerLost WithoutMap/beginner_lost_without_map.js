@@ -8,3 +8,15 @@ function maps(numbers) {
 }
 
 console.log(maps([1, 2, 3]));
+
+// other answer using loop.
+function map(numbers) {
+  let nums = [];
+
+  for (let i in numbers) {
+    nums.push(numbers[i] * 2);
+  }
+  return nums;
+}
+
+console.log(map([1, 2, 3]));
