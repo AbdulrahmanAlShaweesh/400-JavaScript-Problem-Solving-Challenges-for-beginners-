@@ -13,3 +13,10 @@ function findSmallestNumber(numbers) {
 }
 
 console.log(findSmallestNumber([1, 2, 3, -1, -10, -20, -2, -30]));
+
+// other way to do the task using min function.
+function findSmallestNumberInArray(numbers) {
+  return Math.min(...numbers);
+}
+
+console.log(findSmallestNumberInArray([1, 2, 3, -1, -10, -20, -2, -30]));
